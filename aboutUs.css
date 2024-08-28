@@ -1,0 +1,314 @@
+*{
+    margin: 0;
+    overflow-x: hidden;
+}
+
+.header{
+    display: flex;
+    height: 60px;
+}
+
+.logo{
+  width: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navBar{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 80%;
+    font-size: 16px;
+}
+
+button{
+        background-color: #EB2232;
+        height: 40px;
+        width: 140px;
+        border: none;
+        outline: none;
+        border-radius: 10px;
+        color: white;
+    }
+
+.navlink{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 60%;
+
+    a{
+        color: black;
+        text-decoration: none;
+    }
+}
+
+.heroholder{
+    background-image: url("./Images/About-Us/hero.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+    color: white;
+    background-blend-mode: overlay;
+    background-color: rgba(72, 71, 71, 0.574);
+    opacity: 100px;
+}
+
+.whoweare-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    /* margin-left: 40px; */
+    margin-right: 300px;
+}
+
+.whowearePics{
+    display: flex;
+    height: 600px;
+    margin-left: 400px;
+    width: 60%;
+}
+
+.whoweareText{
+    width: 80%;
+    display: flex;
+    gap: 60px;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.plan{
+    display: flex;
+    margin-top: 30px;
+}
+
+.planBox{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50%;
+    gap: 20px;
+
+    p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 300px;
+    border-radius: 100%;
+    background-color:#D9D9D9;
+    text-align: center;
+    font-size: 24px;
+    }
+
+    h3{
+        font-size: 50px;
+    }
+}
+
+.team-container{
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    h2{
+        font-size: 50px;
+    }
+}
+
+.team{
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    gap: 80px;
+}
+
+.teamHolder{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    h4{
+        font-size: 24px;
+    }
+
+    h5{font-size: 20px;
+    }
+    
+}
+
+.team-socials{
+    display: flex;
+    gap: 40px;
+}
+
+.news-container{
+    margin-top: 50px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: #D9D9D9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+
+    h2{
+        font-size: 48px;
+    }
+
+    p{
+        font-size: 38px;
+        width: 50%;
+    }
+}
+
+.footer{
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+
+.footerwrapper{
+  width: 80%;
+  display: flex;
+  justify-content:space-between;
+}
+
+
+.footer-info{
+  display: flex;
+  gap: 40px;
+  flex-direction: column;
+  width: 32%;
+    padding: 50px 0px;
+    color: black;
+    h2{
+        font-size: 24px;
+    }
+    h3{
+        font-size: 20px;
+        font-weight: lighter;
+    }
+    p{
+        width: 60%;
+    }
+}
+
+
+
+
+@media screen and (max-width: 500px) {
+
+    .header{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left:20px;
+    }
+
+    .logo{
+        width: 150px;
+    }
+    .navlink{
+        display: none;
+    }
+
+    .navButton{
+        padding-left: 100px;
+    }
+
+    .heroholder{
+        background-size: cover;        
+        background-position: center;  
+        height: 300px;
+        font-size: 30px;
+    }
+
+    .whoweare-container{
+        display: block;
+        width: 100%;
+    }
+
+    .whowearePics{
+        width: 100%;
+        height: 400px;
+        margin-left: 30px;
+    }
+
+    .whoweareText{
+        width: 100%;
+        text-align: center;
+        margin-left: none;
+        margin-top: 30px;
+    }
+
+    .plan{
+        display: block;
+        width: 850px;
+    }
+
+.planBox{
+    margin-top: 30px;
+    gap: 2px;
+}
+
+.team{
+    display: block;
+}
+
+.teamHolder{
+    margin-top: 30px;
+
+    h4{
+        font-weight: lighter;
+    }
+
+    h5{
+        font-weight: lighter;
+    }
+}
+
+.news-container{
+        h2{
+            font-size: 30px;
+        }
+        p{
+            font-size: 20px;
+            width: 100%;
+        }
+    }
+
+
+  .footerwrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .footer-info{
+        width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 10px;  
+    margin-top: 5px;
+
+  }
+
+    }
